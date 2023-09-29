@@ -1,0 +1,113 @@
+@import "common.scss";
+
+.support__page {
+   background-color: #121920;;
+}
+.support__container {
+   padding: 3.6% 0 2% 0;
+}
+.support__body {
+   flex-direction: column;
+}
+.support__title-h {
+   color: #FFF;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(38, 20);
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   padding-bottom: 9%;
+}
+.support__cards {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+.support__card {
+   border-radius: 5px;
+   background: #FFF;
+   padding: 0 12px 27px 24px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex: 1;
+}
+.support__card-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 1 1 auto;
+}
+.support__card-image {
+   width: 178px;
+}
+.support__card-img {
+   width: 100%;
+}
+.support__card-title-h {
+   color: #1B242D;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(18, 12);
+   font-style: normal;
+   font-weight: 700;
+   line-height: 24px; 
+   text-align: center;
+   padding: 15px 0 12px 0;
+}
+.support__card-subtitle-p {
+   color: #88939E;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(13, 10);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 16px; 
+   text-align: center;
+}
+.support__card-connection {
+   padding-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+}
+.support__card-connection-link {
+   color: #121920;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(13, 10);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px; 
+   padding-left: 28px;
+}
+.connection-tel {
+   position: relative;
+   &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url('../img/support/telephone-handle-silhouette.svg');
+      background-repeat: no-repeat;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+.connection-email {
+   position: relative;
+   &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url('../img/support/at.svg');
+      background-repeat: no-repeat;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}

@@ -1,0 +1,46 @@
+@import "common.scss";
+
+.none-popup {
+   display: none!important;
+}
+.popup__container {
+   width: 250px;
+   height: 200px;
+   border-radius: 5px;
+   background: #F8BE4D;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 9999;
+}
+.popup__body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+   padding: 20px 25px;
+}
+.popup__tile {
+   color: #121920;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(20, 14);
+   font-style: normal;
+   font-weight: 700;
+   line-height: 24px; 
+   text-align: center;
+}
+.close-button {
+   padding: 10px 15px;
+   border-radius: 5px;
+   border: 2px solid #1B242D;;
+   background: inherit;
+   cursor: pointer;
+   &:hover {
+      color: #fff;
+      border-color: #fff;
+   }
+ }

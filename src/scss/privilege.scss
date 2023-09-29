@@ -1,0 +1,169 @@
+@import "common.scss";
+
+.privilege__page {
+   background-image: linear-gradient(rgba(18, 25, 32, 0.60), rgba(18, 25, 32, 0.98)), url('../img/privilege/BG.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 77px 0 120px 0;
+}
+.privilege__container {
+}
+.privilege__body {
+   flex-direction: column;
+}
+.privilege__title {
+}
+.privilege__tile-h {
+   color: #FFF;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(38, 23);
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+}
+.privilege__content {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 30px;
+   padding: 9.6% 0 11.5% 0;
+}
+.privilege__content-image {
+   width: 420px;
+}
+.privilege__content-img {
+   width: 100%;
+}
+.privilege__content-text {
+   width: 40%;
+   padding-top: 8%;
+   @media screen and (max-width: 1027px) {
+      width: 100% !important;
+   }
+}
+.privilege__content-title {
+}
+.privilege__content-title-h {
+   color: #F8BE4D;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(30, 20);
+   font-style: normal;
+   font-weight: 700;
+   line-height: 14px; 
+   margin-bottom: 10%;
+   @media screen and (max-width: 1027px) {
+      text-align: center;
+   }
+}
+.privilege__content-subtitle {
+}
+.privilege__content-subtitle-p {
+   color: #88939E;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(24, 18);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 34px;
+   span {
+      color: #FFF;
+      font-family: 'Lato', sans-serif;
+      @include adaptiveFont(24, 18);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 34px;
+   }
+   @media screen and (max-width: 1027px) {
+      text-align: center;
+   }
+}
+.privilege__form {
+}
+.privilege__form-title {
+}
+.privilege__form-title-h {
+   color: #FFF;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(28, 20);
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   padding-bottom: 1.5%;
+}
+.privilege__form-content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.privilege__form-group {
+   flex: 1;
+   display: flex;
+}
+.privilege__form-control {
+   color: #88939E;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(15, 9);
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   border-bottom: solid 1px #3A434C;
+   background-color: inherit;
+   padding: 15px 15px 15px 34px;
+   flex: 1;
+   flex-wrap: wrap;
+}
+.privilege__form-control-name {
+   position: relative;
+   &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/privilege/profile.svg');
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+.privilege__form-control-tel {
+   position: relative;
+   &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/privilege/telephone-handle-silhouette.svg');
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+.privilege__form-btn-primary {
+   color: #FFF;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(17,11);
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   border-radius: 5px;
+   border: 1px solid #F8BE4D;
+   background-color: inherit;
+   width: 274px;
+   height: 50px;
+   flex: 1;
+   padding: 0 15px;
+   &:hover {
+      border-radius: 5px;
+      background: #F8BE4D;
+      border: none;
+      color: #121920;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      @include adaptiveFont(17,11);   
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+   }
+}

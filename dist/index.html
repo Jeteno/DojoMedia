@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dojo Media</title>
+   <link rel="stylesheet" type="text/css" href="dist/main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+   <div class="wrapper">
+      <header class="header__page page">
+         <div class="header__container container">
+            <div class="header__body body">
+               <a href="#" class="header__logo">
+                  <img src="./img/header/logo.png" alt="Logo" class="header__logo-img">
+               </a>
+               <div class="header__phone">
+                  <img src="./img/header/Frame.svg" alt="Phone" class="header__phone-img">
+                  <a href="tel:+74957852791" class="header__phone-link">
+                     +7 (495) <span> 785-27-91</span> 
+                  </a>   
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="popup__page none-popup">
+            <div class="popup__container">
+               <div class="popup__body">
+                  <h2 class="popup__tile">
+                     Пожалуйста, проверьте данные, произошла ошибка ввода данных 
+                  </h2>
+                  <button class="close-button" id="closeButton">ОК</button>
+               </div>
+            </div>
+         </section>
+         <section class="main-screen__page page"> 
+            <div class="main-screen__container container">
+               <div class="main-screen__body body">
+                  <div class="main-screen__content">
+                     <div class="main-screen__content-title">
+                        <h1 class="main-screen__title">
+                           СТАТУС Премиум<span>.</span> 
+                        </h1>
+                     </div>
+                     <div class="main-screen__content-subtitle">
+                        <p class="main-screen__subtitle">
+                           Премиальный формат обслуживания
+                        </p>
+                     </div>
+                     <button class="main-screen__button" id="scrollButton">
+                        Стать премиальным клиентом
+                     </button>
+                     <ul class="main-screen__list">
+                        <li class="main-screen__paragraph">
+                           Назовите промокод <span>#premium</span> <br>при обращении и получите <span>скидку 15%</span> 
+                        </li>
+                        <li class="main-screen__paragraph">
+                           <span>Бесплатная </span> парковка для владельцев карт <br>премиального обслуживания <span>STATUS Premium</span> 
+                        </li>
+                     </ul>
+                  </div>
+                  <form action="main-screen" class="form">
+                     <div class="form__title">
+                        <h2 class="form__title-h">
+                           Перезвоним в течение 5 минут
+                        </h2>
+                     </div>
+                     <div class="form__group">
+                        <input type="text" class="form-control" id="exampleInputText" placeholder="Ваши фамилия, имя, отчество*">
+                     </div>
+                     <div class="form__group">
+                        <input type="tel" class="form-control" id="exampleInputTel" name="tel" inputmode="tel" maxlength="11" placeholder="Ваш телефон*">
+                     </div>
+                     <button type="submit" class="btn btn-primary" id="openButton">Заказать звонок</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+         <section class="service__page page">
+            <div class="service__container container">
+               <div class="service__body body">
+                  <div class="service__title">
+                     <h2 class="service__title-h">
+                        Премиальное обслуживание
+                     </h2>
+                  </div>
+                  <div class="service__cards">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="privilege__page page">
+            <div class="privilege__container container">
+               <div class="privilege__body body">
+                  <div class="privilege__title">
+                     <h2 class="privilege__tile-h">
+                        Привилегии
+                     </h2>
+                  </div>
+                  <div class="privilege__content">
+                     <div class="privilege__content-image">
+                        <img src="./img/privilege/Group.png" alt="Card" class="privilege__content-img">
+                     </div>
+                     <div class="privilege__content-text">
+                        <div class="privilege__content-title">
+                           <h3 class="privilege__content-title-h">
+                              Бесплатная парковка
+                           </h3>
+                        </div>
+                        <div class="privilege__content-subtitle">
+                           <p class="privilege__content-subtitle-p">
+                              При обслуживании в офисе для владельцев карт премиального обслуживания <span>STATUS Premium</span>
+                           </p>
+                        </div>   
+                     </div>
+                  </div>
+                  <form action="privilege" class="privilege__form">
+                     <div class="privilege__form-title">
+                        <h2 class="privilege__form-title-h">
+                           Запланировать встречу
+                        </h2>
+                     </div>
+                     <div class="privilege__form-content">
+                        <div class="privilege__form-group privilege__form-control-name">
+                           <input type="text" class="privilege__form-control" id="exampleInputText" placeholder="Ваши фамилия, имя, отчество*">
+                        </div>
+                        <div class="privilege__form-group privilege__form-control-tel">
+                           <input type="text" class="privilege__form-control " id="privilegeInputTel" name="tel" maxlength="11" placeholder="Ваш телефон*">
+                        </div>
+                        <button type="submit" class="privilege__form-btn-primary">Запланировать встречу</button>   
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+         <section class="support__page page">
+            <div class="support__container container">
+               <div class="support__body body">
+                  <div class="support__title">
+                     <h2 class="support__title-h">
+                        Премиальное обслуживание
+                     </h2>
+                  </div>
+                  <div class="support__cards">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="instructions__page page">
+            <div class="instructions__container container">
+               <div class="instructions__body body">
+                  <div class="instructions__title">
+                     <h2 class="instructions__title-h">
+                        Как стать премиальным клиентом
+                     </h2>
+                  </div>
+                  <div class="instructions__cards">
+                  </div>
+                  <div class="instruction__content">
+                     <div class="instruction__decoration">
+                        <div class="instruction__decoration-image">
+                           <img src="./img/instructions/instruction__decoration-img.png" alt="" class="instruction__decoration-img">
+                        </div>
+                        <div class="instruction__decoration-subtitle">
+                           <p class="instruction__decoration-subtitle-p">
+                              Назовите промокод <span>#premium</span> <br> при обращении и получите <span>скидку 15%</span>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="instruction__form">
+                        <div class="instruction__form-content">
+                           <div class="instruction__form-content-title">
+                              <h3 class="instruction__form-content-title-h">
+                                 Вы получаете
+                              </h3>
+                           </div>
+                           <div class="instruction__form-content-subtitle">
+                              <p class="instruction__form-content-subtitle-p">
+                                 Приоритетное обслуживание, быстрые экспертные решения
+                              </p>
+                           </div>
+                        </div>
+                        <form action="main-screen" class="form instruction-form">
+                           <div class="form__title">
+                              <h2 class="form__title-h">
+                                 Стать премиальным клиентом
+                              </h2>
+                           </div>
+                           <div class="form__group">
+                              <input type="text" class="form-control" id="exampleInputText" placeholder="Ваши фамилия, имя, отчество*">
+                           </div>
+                           <div class="form__group">
+                              <input type="tel" class="form-control" id="exampleInputTel" name="tel" inputmode="tel" maxlength="11" placeholder="Ваш телефон*">
+                           </div>
+                           <button type="submit" class="btn btn-primary">Стать клиентом</button>
+                        </form>   
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer__page page">
+         <div class="footer__container container">
+            <div class="footer__body body">
+               <a href="#" class="footer__logo">
+                  <img src="./img/footer/logo.svg" alt="Logo" class="footer__logo-img">
+               </a>
+               <div class="footer__phone">
+                  <img src="./img/footer/Frame.svg" alt="Phone" class="footer__phone-img">
+                  <a href="tel:+74957852791" class="footer__phone-link">
+                     +7 (495) <span> 785-27-91</span> 
+                  </a>   
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>

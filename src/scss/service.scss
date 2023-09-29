@@ -1,0 +1,77 @@
+@import "common.scss";
+
+.service__page {
+   background: #121920;
+}
+.service__container {
+   padding: 75px 0 21px 0;
+}
+.service__body {
+   flex-direction: column;
+}
+.service__title {
+   padding-bottom: 88px;
+}
+.service__title-h {
+   color: #FFF;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(38, 20);
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+}
+.service__cards {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+.service__card {
+   border-radius: 5px;
+   border: 1px solid #1B242D;
+   background: inherit;
+   padding: 34px 24px 30px 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   flex: 1;
+   &:hover {
+      border-radius: 5px;
+      background: #F8BE4D;
+      border: none;
+      color: #121920;
+   }
+}
+.service__card-content {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+.content__title {
+   color: #FFF;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(20, 14);
+   font-style: normal;
+   font-weight: 700;
+   line-height: 24px; 
+}
+.service__card:hover .content__title {
+   color: #121920;
+}
+.service__card-content-subtitle {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+.content__subtitle {
+   color: #88939E;
+   font-family: 'Lato', sans-serif;
+   @include adaptiveFont(15, 10);
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+}
+.service__card:hover .content__subtitle {
+   color: #121920;
+}
